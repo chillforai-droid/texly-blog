@@ -1,0 +1,5 @@
+{
+  "name": "Texly Blog System",
+  "description": "A dynamic blog system for Texly with Supabase storage and a hidden admin panel.",
+  "requestFramePermissions": []
+}

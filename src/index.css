@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+@import "react-quill-new/dist/quill.snow.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  .prose h2 {
+    @apply text-3xl font-serif font-light mt-12 mb-6 text-gray-900;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-serif font-light mt-8 mb-4 text-gray-900;
+  }
+
+  .prose p {
+    @apply mb-6;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-orange-500 pl-6 italic font-serif text-xl text-gray-600 my-10;
+  }
+
+  .prose ul {
+    @apply list-disc list-inside mb-6 space-y-2;
+  }
+
+  .prose ol {
+    @apply list-decimal list-inside mb-6 space-y-2;
+  }
+
+  .prose a {
+    @apply text-orange-600 underline underline-offset-4 hover:text-orange-700 transition-colors;
+  }
+
+  .prose img {
+    @apply rounded-3xl my-12 shadow-lg;
+  }
+}
